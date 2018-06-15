@@ -1,0 +1,34 @@
+.margin-about{
+  margin: 0;
+}
+
+.parallax-about{
+  background: url("http://fcdhw.info/wp-content/uploads/2018/01/designs-sofa-set-wallpaper-gallery-design-classic-chair-grey-and-white-background-fruits-on-table-grey-sofa-set-wallpaper-and-white-background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.parallax-inner-about{
+  padding-top: 25%;
+  padding-bottom: 25%;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: white;
+}
+p{
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
+
+}
