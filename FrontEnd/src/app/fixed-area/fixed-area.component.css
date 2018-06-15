@@ -1,0 +1,25 @@
+.margin{
+  margin: 0;
+}
+
+.parallax{
+  background: url("https://www.macintuts.com/wp-content/uploads/floors.jpeg") repeat fixed 100%;
+}
+.parallax-inner{
+  padding-top: 25%;
+  padding-bottom: 25%;
+
+}
+h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: white;
+}
+p{
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
+
+}
