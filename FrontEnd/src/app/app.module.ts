@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
+// import { NavbarComponent } from './navbar/navbar.component';
 import { SliderComponent } from './slider/slider.component';
 import { JumbotroneComponent } from './jumbotrone/jumbotrone.component';
 import { WelcomeSectionComponent } from './welcome-section/welcome-section.component';
@@ -17,7 +17,7 @@ import { GigSliderComponent } from './gig-slider/gig-slider.component';
 import { ConnectComponent } from './connect/connect.component';
 import { CommentsComponent } from './comments/comments.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-import { FooterComponent } from './footer/footer.component';
+// import { FooterComponent } from './footer/footer.component';
 import { RouterModule, Routes } from '@angular/router';
 import {HttpModule} from "@angular/http";
 import {PostService} from "./service/post.service";
@@ -34,7 +34,7 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
+    // NavbarComponent,
     SliderComponent,
     JumbotroneComponent,
     WelcomeSectionComponent,
@@ -48,7 +48,7 @@ const appRoutes: Routes = [
     ConnectComponent,
     CommentsComponent,
     AboutUsComponent,
-    FooterComponent,
+    // FooterComponent,
     RegisterComponent,
     AdminLoginComponent
   ],

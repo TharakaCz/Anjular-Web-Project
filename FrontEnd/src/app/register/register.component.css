@@ -387,14 +387,35 @@
   /*}*/
 /*}*/
 .container{
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  z-index: 20;
-  position: absolute;
+  /*width: 100%;*/
+  /*height: 80%;*/
+  /*background-color: white;*/
+  /*z-index: 20;*/
+  /*position: relative;*/
+  /*border: black;*/
+
 }
 .register-form{
 
+}
+
+.popup{
+  width: 60%;
+  height: 60%;
+  background-color: white;
+  z-index: 20;
+  position: absolute;
+
+  margin: 0;
+  padding: 0;
+  left: 20%;
+  top: 18%;
+  background-image: url("http://hanslodge.com/images/rcjr5j6ni.jpg");
+
+}
+
+.popup:hover{
+  box-shadow: rgba(228,228,228,1);
 }
 
 .btn{

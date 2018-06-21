@@ -1,47 +1,289 @@
 <!--Navigation Bar-->
-<app-navbar></app-navbar>
+<!--<app-navbar></app-navbar>-->
+<div id="nav">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="http://www.eatlogos.com/all_free_logos/png/vector_blue_eagle_logo.png" alt="">
+      Ferniture Sales Rental
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<!--Routing Area-->
-<router-outlet></router-outlet>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" routerLink="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="">Gigs</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" routerLink="">log</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" routerLink="register">Sigin</a>
+        </li>
 
-<!--Slider-->
-<app-slider></app-slider>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Explore Offerings
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Living Room</a>
+            <a class="dropdown-item" href="#">Bed Room</a>
+            <a class="dropdown-item" href="#">Bed Room</a>
+            <a class="dropdown-item" href="#">Super Value Combos</a>
+            <a class="dropdown-item" href="#">Dining Room</a>
+            <a class="dropdown-item" href="#">Study Room</a>
+            <a class="dropdown-item" href="#">Kids Room</a>
+            <a class="dropdown-item" href="#">Storege</a>
 
-<!--Jumbotrone-->
-<app-jumbotrone></app-jumbotrone>
+            <!--<div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>-->
+          </div>
+        </li>
 
-<!--Welcome Banner-->
-<app-welcome-section></app-welcome-section>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+          <ul id="login-dp" class="dropdown-menu">
+            <li>
+              <div class="row">
+                <div class="col-md-12">
+                  Sign-in
+                  <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                    <div class="form-group">
+                      <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="exampleInputPassword2">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                      <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> keep me logged-in
+                      </label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
 
-<!--Ouer Gole-->
-<app-gole></app-gole>
+        <!--<li class="nav-item">-->
+        <!--<a class="nav-link" href="#" routerLink="" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="fas fa-user-secret"></i>  Admin Login</a>-->
+        <!--<div id="id01" class="modal">-->
 
-<!--Section-->
-<app-section></app-section>
+        <!--<form class="modal-content animate" action="/action_page.php">-->
+        <!--<div class="imgcontainer">-->
+        <!--<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>-->
+        <!--<img src="https://i.pinimg.com/originals/67/70/a3/6770a3fa9bdcc1bd33770106cd70fb22.png" alt="Avatar" class="avatar"><br>-->
+        <!--<h2>Furni Rent Admin Login</h2>-->
+        <!--</div>-->
 
-<!--Fixed Area-->
-<app-fixed-area></app-fixed-area>
+        <!--<div class="container">-->
+        <!--<form class="admin">-->
+        <!--<label formGroupName="name"><b>Username</b></label>-->
+        <!--<input type="text" #name class="form-control" placeholder="Enter Username" name="name" required="">-->
 
-<!--Team-->
-<app-team></app-team>
+        <!--<label formGroup="password"><b>Password</b></label>-->
+        <!--<input type="password" #password class="form-control" placeholder="Enter Password" name="password" required="" >-->
+        <!--<div class="action">-->
+        <!--<button type="submit" class="btn btn-primary" (click)="AdminLogin()">Login</button>-->
+        <!--<label>-->
+        <!--<input type="checkbox" checked="checked" name="remember"> Remember me-->
+        <!--</label>-->
+        <!--</div>-->
+        <!--</form>-->
+        <!--</div>-->
 
-<!--Proggress-->
-<app-proggress></app-proggress>
+        <!--<div class="container" style="background-color:#f1f1f1">-->
+        <!--<button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-danger cancel">Cancel</button>-->
+        <!--<span class="psw">Forgot <a href="#">password?</a></span>-->
+        <!--</div>-->
+        <!--</form>-->
+        <!--</div>-->
+        <!--</li>-->
+        <li class="nav-item" >
+          <a class="nav-link" routerLink="admin-login"><i class="fas fa-user-secret"></i>  Admin-Login</a>
+        </li>
+      </ul>
 
-<!--Philosopy-->
-<app-philosophy></app-philosophy>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
 
-<!--Gig Slider-->
-<app-gig-slider></app-gig-slider>
 
-<!--Connect-->
-<app-connect></app-connect>
+</div>
 
-<!--Comment-->
-<app-comments></app-comments>
+<!--<script>-->
+<!--// Get the modal-->
+<!--var modal = document.getElementById('id01');-->
 
-<!--About Us-->
-<app-about-us></app-about-us>
+<!--// When the user clicks anywhere outside of the modal, close it-->
+<!--window.onclick = function(event) {-->
+<!--if (event.target == modal) {-->
+<!--modal.style.display = "none";-->
+<!--}-->
+<!--}-->
+<!--</script>-->
 
-<!--Footer-->
-<app-footer></app-footer>
+<div class="main">
+  <div class="center">
+    <!--Routing Area-->
+    <router-outlet></router-outlet>
+
+    <!--Slider-->
+    <app-slider></app-slider>
+
+    <!--Jumbotrone-->
+    <app-jumbotrone></app-jumbotrone>
+
+    <!--Welcome Banner-->
+    <app-welcome-section></app-welcome-section>
+
+    <!--Ouer Gole-->
+    <app-gole></app-gole>
+
+    <!--Section-->
+    <app-section></app-section>
+
+    <!--Fixed Area-->
+    <app-fixed-area></app-fixed-area>
+
+    <!--Team-->
+    <app-team></app-team>
+
+    <!--Proggress-->
+    <app-proggress></app-proggress>
+
+    <!--Philosopy-->
+    <app-philosophy></app-philosophy>
+
+    <!--Gig Slider-->
+    <app-gig-slider></app-gig-slider>
+
+    <!--Connect-->
+    <app-connect></app-connect>
+
+    <!--Comment-->
+    <app-comments></app-comments>
+
+    <!--About Us-->
+    <app-about-us></app-about-us>
+  </div>
+
+
+  <!--Footer-->
+  <!--<app-footer></app-footer>-->
+  <!--Footer-->
+  <footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
+
+    <!--Footer Links-->
+    <div class="container text-center text-md-left">
+
+      <!-- Footer links -->
+      <div class="row text-center text-md-left mt-3 pb-3">
+
+        <!--First column-->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold" style="font-size: 30px">Fernitur Rental</h6>
+          <p>NO.1 Ferniture Rental Website Srilanka We Providing Fast And Satisfy Ferinituers Our Customers , We Have a Best Compannys Sellers Srilanka.</p>
+        </div>
+        <!--/.First column-->
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!--Second column-->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Outher</h6>
+          <p><a href="#!">Ferniture Rental Android App</a></p>
+          <p><a href="#!">Facebook Group</a></p>
+          <p><a href="#!">Our Sellers</a></p>
+
+        </div>
+        <!--/.Second column-->
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!--Third column-->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+          <p><a href="#!">Sellers</a></p>
+          <p><a href="#!">Companys</a></p>
+          <p><a href="#!">Dilivery</a></p>
+          <p><a href="#!">Help</a></p>
+        </div>
+        <!--/.Third column-->
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!--Fourth column-->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <p><i class="fa fa-home mr-3"></i> No.127 Nidangala,Kotavila,Kaburugamuwa,Matara,Srilanka</p>
+          <p><i class="fa fa-envelope mr-3"></i> Tharakacz823@gmail.com</p>
+          <p><i class="fa fa-phone mr-3"></i> + 94 77 911 28 86</p>
+          <p><i class="fa fa-print mr-3"></i> N/A</p>
+        </div>
+        <!--/.Fourth column-->
+
+      </div>
+      <!-- Footer links -->
+
+      <hr>
+
+      <div class="row py-3 d-flex align-items-center">
+
+        <!--Grid column-->
+        <div class="col-md-8 col-lg-8">
+
+          <!--Copyright-->
+          <p class="text-center text-md-left grey-text">© 2018 Copyright: <a href="http://www.ijse.lk/"><strong> IJSE.com</strong></a></p>
+          <!--/.Copyright-->
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-4 col-lg-4 ml-lg-0">
+
+          <!--Social buttons-->
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-google-plus"></i></a></li>
+              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <!--/.Social buttons-->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+
+    </div>
+
+  </footer>
+  <!--/.Footer-->
+
+</div>
+
+
