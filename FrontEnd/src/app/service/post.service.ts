@@ -1,22 +1,22 @@
-import { Injectable } from '@angular/core';
-import {Http} from "@angular/http";
+import {Injectable} from '@angular/core';
+import {Http} from '@angular/http';
 
 @Injectable()
 export class PostService {
 
-  private url='http://localhost/BackEnd/index.php/Registation/getArchitecture';
+  private url = 'http://localhost/BackEnd/index.php/Registation/getArchitecture';
 
-  constructor(private http:Http) { }
-
-  getPost(){
-    return this.http.get('http://localhost/BackEnd/index.php/welcome')
+  constructor(private http: Http) {
   }
 
-  RegisterDevolpoer(formData){
+  getPost() {
+    return this.http.get('http://localhost/BackEnd/index.php/welcome');
+  }
 
-    console.log("Test2");
-    return this.http.post(this.url,formData)
+  RegisterDevolpoer(formData) {
 
+    console.log('Test2');
+    return this.http.post(this.url, formData);
 
 
   }
