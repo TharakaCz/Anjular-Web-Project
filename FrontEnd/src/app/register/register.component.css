@@ -400,16 +400,14 @@
 }
 
 .popup{
-  width: 60%;
-  height: 60%;
-  background-color: white;
-  z-index: 20;
-  position: absolute;
-
+  width: 100%;
+  height: 1000px;
+  z-index: 5;
+  position: relative;
   margin: 0;
   padding: 0;
-  left: 20%;
-  top: 18%;
+  left: 0%;
+  top: 0%;
   background-image: url("http://hanslodge.com/images/rcjr5j6ni.jpg");
 
 }
@@ -426,23 +424,3 @@
   position: absolute;
 }
 
-.animates {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)}
-  to {-webkit-transform: scale(1)}
-}
-
-@keyframes animatezoom {
-  from {transform: scale(0)}
-  to {transform: scale(1)}
-}
-
-.model{
-  overflow: auto;
-  position: fixed;
-}
