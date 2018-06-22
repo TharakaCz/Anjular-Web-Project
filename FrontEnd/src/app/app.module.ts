@@ -28,6 +28,8 @@ import {AdminLoginService} from './service/admin-login.service';
 import {HomePageComponent} from './home-page/home-page.component';
 import {AppRoutingModule} from './app-routing/app-routing.module';
 import { GigsComponent } from './gigs/gigs.component';
+import {FormsModule} from "@angular/forms";
+import {HttpModule} from "@angular/http";
 
 
 @NgModule({
@@ -55,6 +57,8 @@ import { GigsComponent } from './gigs/gigs.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpModule,
     AppRoutingModule
   ],
   providers: [
