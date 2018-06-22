@@ -5,14 +5,15 @@ import {HomePageComponent} from '../home-page/home-page.component';
 import {AdminLoginService} from '../service/admin-login.service';
 import {GigsComponent} from '../gigs/gigs.component';
 
+import {AdminLoginComponent} from '../admin-login/admin-login.component';
 
 
 const routes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: 'home-page', component: HomePageComponent},
-  {path: 'admin-login', component: AdminLoginService},
   {path: '', redirectTo: '/home-page', pathMatch: 'full'},
-  {path: 'gigs', component: GigsComponent}
+  {path: 'gigs', component: GigsComponent},
+  {path: 'admin-login', component: AdminLoginComponent}
 ];
 
 @NgModule({
