@@ -14,6 +14,7 @@ export class RegisterComponent implements OnInit {
 
   }
 
+
   RegisterDevolpoer() {
 
     console.log("Test1");
@@ -34,17 +35,17 @@ export class RegisterComponent implements OnInit {
     formData.append('Cpassword', Cpassword);
     formData.append('Cconfirm', Cconfirm);
 
+    if (Cconfirm==Cpassword){
+      this.service.RegisterDevolpoer(formData)
+        .subscribe(res => {
+          if (res.json() === 1) {
+            console.log("Sucsess");
+          } else {
+            console.log("Fail");
+          }
+        });
+    }
 
-
-
-    this.service.RegisterDevolpoer(formData)
-      .subscribe(res => {
-        if (res.json() === 1) {
-          console.log("Sucsess");
-        } else {
-          console.log("Fail");
-        }
-      });
   }
 
 }
