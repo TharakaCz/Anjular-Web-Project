@@ -20,13 +20,16 @@ class Registation extends CI_Controller
 
 	public function getArchitecture(){
 
+
 		$result=$this->client->AddClient([
 			'Name' => $_POST['Cname'],
 			'Email' => $_POST['Cemail'],
 			'Option' => $_POST['Coption'],
-			'Password' => $_POST['Cpassword'],
-			'Confirm' => $_POST['Cconfirm'],
+			//<<Password Changing to Hash>>
+			'Password' => sha1($_POST['Cpassword']),
+
 		]);
+
 		echo $result;
 	}
 
